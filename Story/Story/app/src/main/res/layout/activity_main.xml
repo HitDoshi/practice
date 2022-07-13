@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/z1"
+    tools:context=".MainActivity">
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        app:cardBackgroundColor="#832102"
+        style="@style/CustomCardViewStyle"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="20dp">
+
+
+        <ImageView
+            android:id="@+id/share"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:src="@drawable/ic_baseline_ios_share_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_marginLeft="41dp"
+            android:textAlignment="center"
+            android:text="Share"
+            android:textSize="10dp"
+            android:textColor="@color/white"/>
+
+
+        <ImageView
+            android:id="@+id/rate"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="170dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_star_rate_24"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_marginLeft="175dp"
+            android:textColor="@color/white"
+            android:text="Rate"
+            android:textSize="10dp"/>
+
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="300dp"
+            android:layout_marginRight="400sp"
+            android:src="@drawable/ic_baseline_apps_24"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_marginLeft="305dp"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:text="More"/>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="English Comdey"
+            android:textSize="40dp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:layout_marginTop="130sp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="180dp"
+            android:text="Story"
+            android:textAlignment="center"
+            android:textStyle="italic"
+            android:textSize="40dp"
+            android:layout_marginLeft="0dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/letsstart"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="300dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/my_item"
+            android:text="Let's start"
+            android:layout_marginRight="30dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/removeads"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/my_item"
+            android:text="Remove Ads"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

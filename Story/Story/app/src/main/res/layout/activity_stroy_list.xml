@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StroyListActivity">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="400dp"
+        android:layout_height="90dp"
+        app:cardBackgroundColor="#832102"
+        style="@style/CustomCardViewStyle"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:layout_marginLeft="20dp">
+
+
+        <ImageButton
+            android:id="@+id/imagebutton"
+            android:layout_marginLeft="3dp"
+            android:layout_width="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="40dp"
+            android:background="#00FFFFFF"
+            android:src="@drawable/ic_baseline_keyboard_arrow_left_24"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:focusableInTouchMode="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/Theme.AppCompat.Light"
+            app:titleTextColor="@color/black">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:textAlignment="center"
+                android:text="English comdey story"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolBar"
+        android:layout_marginTop="117dp"
+        tools:ignore="NotSibling" />
+
+
+</RelativeLayout>
